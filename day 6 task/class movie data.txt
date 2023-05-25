@@ -1,0 +1,25 @@
+class movies {
+
+  constructor(name = '', studio = '', rating = ''){
+    this.name = name;
+    this.studio = studio;
+    this.rating = rating || 'PG';
+   }
+
+   getpg(data = []) {
+     return  data.filter((d) => d.ratings === 'PG');
+   }
+
+}
+ const MovieUtils = new movies();
+var MovieList = [
+     new movies('Lovetodya', 'lyca', 'PG'),
+     new movies('Kgf', 'sandilhood', 'PG13'),
+     new movies('Don', 'redjainmovies', 'R'),
+     new movies('Casino royale', 'eon production', 'PG13'),
+     new movies('Remo', 'lyca', 'PG'),
+   ];
+     
+     
+console.log(MovieUtils.getpg(MovieList)); 
+ 

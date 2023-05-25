@@ -1,0 +1,16 @@
+//caculating of uber price per kms
+class UberPrice {
+ 
+ constructor(KmsTravelled = 0, PricePerkilometer = 0){
+    this.KmsTravelled = KmsTravelled;
+    this.PricePerkilometer = PricePerkilometer;
+  }
+  
+ caculateUberPrice(){
+    return this.KmsTravelled * this.PricePerkilometer
+  }
+ }
+const ReviBill = new UberPrice(100,6);
+console.log(ReviBill.caculateUberPrice())
+ 
+ 

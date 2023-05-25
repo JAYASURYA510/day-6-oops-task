@@ -1,0 +1,13 @@
+//person class, details of person
+
+
+class person{
+  constructor(name = '', age = '', address = '', dob = '',){
+      this.name = 'ak';
+       this.age = '32'
+   this.address = 'chennai tamilnadu india'
+       this.dob = '1/5/198'
+  }
+}
+ console.log(person)
+  
